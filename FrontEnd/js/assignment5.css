@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.products{
+    width: 100%;
+    background-color: lightgray;
+    padding: 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 4%;
+    align-content: flex-start;
+    row-gap: 50px;
+    /* justify-content: space-evenly; */
+}
+
+.item{
+    width: 22%;
+    height: 200px;
+    background-color: red;
+}

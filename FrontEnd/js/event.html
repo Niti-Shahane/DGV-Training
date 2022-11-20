@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+ <style>
+    /* .change{
+        width:100%;
+        height:50px;
+        background-color: red;
+        font-size: 50px;
+    } */
+    .place-bg{
+    width: 5%;
+    
+}
+
+.place-bg1{
+    width: 40%;
+}
+
+.placevisit{
+background-color: white;
+height: 700px;
+width: 100%;
+display : flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+align-content: flex-start;
+row-gap: 20px;
+
+}
+
+
+</style> 
+<body>
+    
+    <script>
+        // let a =["Riya","Ruta","Parth","Deep"];
+
+        // function getUser()
+        // {
+        //     let p=new Promise((resolve,reject)=>{
+                
+        //         a.find((v)=>{
+        //             return v=="parth";
+        //         })
+
+        //         if(a!==undefined)
+        //         {
+        //             console.log("solve");
+        //         }
+        //         else{
+        //             console.log("error");
+        //         }
+            
+
+        //     })
+        //     return p;
+        // }
+        // getUser()
+        // .then((solve) =>{
+        //     console.log(solve);
+        // })
+        // .catch((error) =>{
+        //     console.log(error);
+        // })
+
+        // fetch("https://jsonplaceholder.typicode.com/posts/1",{
+        //     method:"GET",
+
+        // })
+
+        // .then((response) => {
+        //     return response.json();
+        // })
+        
+        // .then((data) =>{
+        //     console.log(data);
+        // })
+
+        // .catch((err) => {
+        //     console.log(err);
+        // })
+
+        // let post={
+        //     userId:4,
+        //     id:4,
+        //     title:"hello",
+        //     body:"hi"
+
+        // }
+
+        // fetch("https://jsonplaceholder.typicode.com/posts",{
+        //     method:"POST",
+        //     headers:{
+        //         "Content-Type" :"application/json"
+        //     },
+        //     body: JSON.stringify(post)
+        // })
+        // .then((response) => {
+        //     return response.json();
+        // })
+        
+        // .then((data) =>{
+        //     console.log(data);
+        // })
+
+        // .catch((err) => {
+        //     console.log(err);
+        // })
+
+        // function changeHeight(){
+        //     let supes = document.getElementById("NITI");
+        //     supes.style.height="100px";
+        // }
+
+        // function changeWidth(){
+        //     let supes = document.getElementById("NITI");
+        //     supes.style.width="50%";
+        // }
+
+        // function changeColor(){
+        //     let supes = document.getElementById("NITI");
+        //     supes.style.backgroundColor="yellow";
+        // }
+
+        // function changeFontSize(){
+        //     let supes = document.getElementById("NITI");
+        //     supes.style.fontSize="50px";
+        // }
+
+        function changesize(){
+            let supes = document.getElementById("NITI");
+             supes.style.width="50%";
+
+        }
+
+    </script>
+
+    <!-- <p class="good">THOR</p>
+    <p class="good">WONDER WOMAN</p>
+    <p> CLASSIC</p>
+    <button onclick="changeName()"> Click me</button> -->
+
+    <!-- <div class="change" id="NITI"> NITI SHAHANE </div>
+    <button onclick="changeHeight()"> Height</button> 
+    <button onclick="changeWidth()"> width</button> 
+    <button onclick="changeColor()"> color</button> 
+    <button onclick="changeFontSize()"> font-size</button>  -->
+
+
+    <div class="placevisit">
+        
+        <div class="child1">
+              
+              
+                <img class="place-bg" src="./photos/1.jpg"> 
+        </div>
+
+         <div class="child2">
+            <img class="place-bg" src="./photos/2.jpg">
+            
+        </div>
+
+        <div class="child3">
+            <img class="place-bg" src="./photos/3.jpg">
+             </div>
+
+        <div class="child4">
+            <img class="place-bg" src="./photos/4.jpg">
+             </div>
+
+        <div class="child5">
+            <img onmouseover="changesize()" id="NITI" class="place-bg1" src="./photos/1.jpg">
+
+        </div>
+
+</body>
+</html>

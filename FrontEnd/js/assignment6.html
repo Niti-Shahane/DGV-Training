@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pseudo Class & Variables</title>
+    <style>
+        :root{
+            --bgcolor:green;
+        }
+
+
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .one {
+            width: 200px;
+            height: 200px;
+            background-color: var(--bgcolor);
+        }
+
+        /* .one:hover
+        {
+            background-color: red;
+        } */
+
+        .one:active{
+            background-color: var(--bgcolor);
+        }
+
+        .two{
+            background-color: var(--bgcolor);
+        }
+
+        .three
+        {
+            background-color: var(--bgcolor);
+        }
+
+        a:visited
+        {
+            color: red;
+        }
+
+        /* p:nth-child(3) {
+            color: blue;
+        } */
+
+        /* p:first-child
+        {
+            color: green;
+        } */
+
+        
+
+        /* p:nth-of-type(1)
+        {
+            background-color: red;
+        } */
+
+
+
+
+    </style>
+</head>
+<body>
+
+
+    <div class="two">
+        <h1>Hello</h1>
+        <p>p</p>
+    </div>
+
+
+    <div class="one">
+
+    </div>
+
+    <p class="three">
+        HI
+    </p>
+
+    <a href="https://www.reddit.com">Link 1</a>
+    <a href="https://www.dgv.in">Link 2</a>
+
+    
+</body>
+</html>
+Footer

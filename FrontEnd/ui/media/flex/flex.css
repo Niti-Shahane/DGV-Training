@@ -8,11 +8,12 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-content: flex-start;
+    row-gap: 20px;
     
 }
 
 .flex-child1{
-    background-color: pink;
+    background-color: red;
     height:300px;
     width: 350px;
   
@@ -25,7 +26,7 @@
 }
 
 .flex-child3{
-    background-color: yellow;
+    background-color: red;
     height:300px;
     width: 350px;
 }
@@ -37,13 +38,13 @@
 }
 
 .flex-child4{
-    background-color: pink;
+    background-color: red;
     height:300px;
     width: 350px;
 }
 
 .flex-child5{
-    background-color: yellow;
+    background-color: red;
     height:300px;
     width: 350px;
 }

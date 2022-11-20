@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // var salary =[100,20000,3000,400,5000,60000,70,80000,90];
+
+        // var a = salary.find(function(v)
+        // {
+            
+            
+        //         // var b = 10/100*v;
+        //         // if(b<=500)
+        //         // {
+        //         //     return b;
+        //         // }
+
+        //             return v >= 50000;
+            
+           
+        // })
+        // console.log(a);
+
+        var Countries=[
+            {
+                name:"INDIA",
+                capital:"DELHI",
+                population:100000,
+                president:"Droupadi Murmu",
+                GDP:321234,
+                Language:"Hindi",
+                millitrycount:3452
+            },
+
+            {
+                name:"USA",
+                capital:"washington DC",
+                population:50000,
+                president:"joe biden",
+                GDP:987653,
+                Language:"ENGLISH",
+                millitrycount:7654
+            },
+            
+            {
+                name:"australia",
+                capital:"SYDNEY",
+                population:100000,
+                president:"Alexander Van der Bellen",
+                GDP:998865,
+                Language:"ENGLISH",
+                millitrycount:8762
+            },
+
+            {
+                name:"UK",
+                capital:"ENGLAND",
+                population:98743,
+                president:"Rishi Sunak",
+                GDP:457808,
+                Language:"ENGLISH",
+                millitrycount:6098
+            },
+            
+            {
+                name:"CHINA",
+                capital:"Beijing ",
+                population:45321,
+                president:"Xi Jinping",
+                GDP:438971,
+                Language:"Mandarin",
+                millitrycount:1234
+            },
+            
+            {
+                name:"IRELAND",
+                capital:"DUBLIN",
+                population:86542,
+                president:"Michael Daniel Higgins",
+                GDP:456789,
+                Language:"IRISH",
+                millitrycount:9090
+            },
+            
+            {
+                name:"GERMANY",
+                capital:"BERLIN",
+                population:65421,
+                president:"Frank-Walter Steinmeier",
+                GDP:321234,
+                Language:"GERMAN",
+                millitrycount:2343
+            },
+            
+            {
+                name:"NEW ZEALAND",
+                capital:"WELLIGTON",
+                population:456753,
+                president:"Deborah Ann Hockley",
+                GDP:87456,
+                Language:"MAORI",
+                millitrycount:7432
+            },
+
+            {
+                name:"BELGIUM",
+                capital:"Brussels ",
+                population:56786,
+                president:"Charles Michel",
+                GDP:875456,
+                Language:"FRENCH",
+                millitrycount:3453
+            },
+            
+            {
+                name:"PORTUGAL",
+                capital:"LISBON",
+                population:123443,
+                president:"Marcelo Nuno Duarte Rebelo de Sousa",
+                GDP:321335,
+                Language:"Portuguese",
+                millitrycount:3459
+            }
+        ]
+
+    // 1)))))   NAME OF COUNTRIES WHERE POPULATION EQUAL TO 50K-100K
+        var a =  Countries.map(function(country,i){
+            if(country.population<=100000 && country.population>=50000)
+            {
+                return country.name;
+            }
+        })
+
+        console.log(a);
+
+        // 2)))))))))) new array of president names
+        var b = Countries.map(function(country,i){
+            return country.president;
+        })
+        console.log(b);
+
+       // 2)))))))))) new array of president names
+       var d=[];
+        
+        Countries.forEach(function(country,i){
+            d.push(country.president);
+            
+
+        }) 
+        console.log(d);
+        
+        
+        //3))))))))))))new array of country and millitrycount
+        var c=[];
+        
+        Countries.forEach(function(country,i){
+            c.push(country.name,country.millitrycount);
+            
+
+        }) 
+        console.log(c);
+
+          
+        //4))))))))))new array of country name and capital name equal to "p"
+        var e =[];
+        var f = Countries.forEach(function(country,i){
+            
+            if(country.name.startsWith("P")){
+                e.push(country.name);
+            }
+        })
+            console.log(e);
+
+    </script>
+</body>
+</html>

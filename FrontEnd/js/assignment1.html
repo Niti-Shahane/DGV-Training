@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .demo{
+            background-color: red;
+height: 700px;
+width: 50%;
+display : flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+align-content: flex-start;
+row-gap: 20px;
+
+        }
+    </style>
+</head>
+<body>
+    
+<div class="demo" id="demo">
+     
+</div>
+    
+
+    <button onclick="changeName()"> Click me</button>
+
+
+    <script>
+        function changeName(){
+            let div=document.getElementById("demo");
+
+            let a=document.createElement("div");
+                a.classList.add("child");
+                
+            let d=document.createElement("h1");
+            d.append("Title");
+            
+            let p=document.createElement("p");
+            p.append("NITI")
+
+            a.append(d);
+            a.append(p);
+
+            let b = document.createElement("button");
+            b.append("click")
+
+            a.append(b);
+
+            div.append(a);
+        }
+
+    </script>
+
+
+</body>
+</html>
